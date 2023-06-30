@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+<h1>Imagens Dinâmicas</h1>
+<p>Tente abrir esse site em vários dispositivos diferentes ou
+    simplesmente aumente ou diminua o tamanho no seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="imagens/paisagem-m.png" type="image/png">
+    <img src="imagens/paisagem-g.png" alt="Imagem Flexível">
+</picture>
+
+<h1>Adicionando Áudios</h1>
+<p>Confira a nossa playlist.</p>
+<ol type="1">
+    <li><b>Body of Water</b><br>
+    <audio src="midia/body-of-water.mp3" controls></audio></li>
+    <li><b>Bete Balanço - Solo</b><br>
+    <audio src="midia/betebalanco.mp3" controls autoplay></audio></li>
+</ol>
+</body>
+</html>
