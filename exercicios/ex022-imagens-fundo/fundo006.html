@@ -6,15 +6,19 @@
     <style>
         body {
             height: 100vh;
-            background-image: url('imagens/wallpaper002.jpg');
+            /* background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
-            background-size: cover; /*ocupa 100% da tela*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            background: url('imagens/wallpaper002.jpg') center center no-repeat fixed; /* usando shorthand */
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
             border: 1px solid;
