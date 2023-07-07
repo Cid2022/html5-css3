@@ -1,12 +1,23 @@
 @charset="UTF-8";
-
+/* OBS.: Por esse método não funcionou (descobrir o porquê)
 @import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family= Sriracha & display=swap');
+*/
+
+@font-face {
+    font-family: "Passion One";
+    src: local("Passion Onne"), url(../fontes/PassionOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: Sriracha;
+    src: url(../fontes/Sriracha-Regular.ttf);
+}
 
 :root {
-    /*--fonte1: Verdana, Geneva, Tahoma, sans-serif;*/
-    --fonte2: 'Passion One', cursiva;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", cursiva;
     --fonte3: 'Sriracha', cursiva;
 }
 
@@ -59,6 +70,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -67,6 +82,15 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+
 }
 
 section.imagem > p {
