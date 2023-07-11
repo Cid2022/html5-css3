@@ -34,7 +34,7 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background-image: url('../imagens/balde-cerveja.jpg');
     color: white;
     text-align: center;
 }
