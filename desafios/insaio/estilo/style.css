@@ -35,21 +35,29 @@ html, body {
 
 header {
     background-image: url('../imagens/balde-cerveja.jpg');
-    color: white;
     text-align: center;
 }
 
 header > h1 {
+    color: rgba(0, 0, 0, 0.74);
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vw;
+    text-shadow: 5px 5px 5px whitesmoke;
 
 }
 
 header > p {
     padding-bottom: 50px;
 }
+
+#insaio {
+    color: red;
+    text-shadow: 6px 5px 5px rgba(0, 0, 0, 0.753);
+
+}
+
 
 header a, footer a {
     color: white;
